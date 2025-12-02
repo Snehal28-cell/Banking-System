@@ -197,7 +197,7 @@ def transaction(identity, amount, choice):
         balance = float(result[0])
         
         # Check withdrawal conditions
-        if choice == 2 and balance - amount < 10000:
+        if choice == 2 and balance - amount < 1000:
             cursor.close()
             conn.close()
             return -1
