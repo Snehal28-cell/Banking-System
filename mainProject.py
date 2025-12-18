@@ -265,10 +265,10 @@ class welcomeScreen:
             window.iconphoto(True, p1)
         except:
             pass
-        window.configure(background="#023047")
+        window.configure(background="#102A43")
         window.configure(cursor="arrow")
 
-        self.Canvas1 = tk.Canvas(window, background="#ffff00", borderwidth="0", insertbackground="black",
+        self.Canvas1 = tk.Canvas(window, background="#F5F7FA", borderwidth="0", insertbackground="black",
                                  relief="ridge",
                                  selectbackground="blue", selectforeground="white")
         self.Canvas1.place(relx=0.190, rely=0.228, relheight=0.496, relwidth=0.622)
@@ -289,8 +289,8 @@ class welcomeScreen:
         self.Button2.configure(font="-family {Segoe UI} -size 10 -weight bold")
         self.Button2.place(relx=0.617, rely=0.583, height=24, width=87)
 
-        self.Label1 = tk.Label(self.Canvas1, background="#ffff00", disabledforeground="#a3a3a3",
-                               font="-family {Segoe UI} -size 13 -weight bold", foreground="#000000",
+        self.Label1 = tk.Label(self.Canvas1, background="#102A43", disabledforeground="#a3a3a3",
+                               font="-family {Segoe UI} -size 13 -weight bold", foreground="#f9f9f9",
                                text='''Please select your role''')
         self.Label1.place(relx=0.241, rely=0.224, height=31, width=194)
 
@@ -343,7 +343,7 @@ class adminLogin:
         window.maxsize(1370, 749)
         window.resizable(0, 0)
         window.title("Admin")
-        window.configure(background="#ffff00")
+        window.configure(background="#0A2A43")
 
         global Canvas1
         Canvas1 = tk.Canvas(window, background="#ffffff", insertbackground="black", relief="ridge",
@@ -399,14 +399,14 @@ class adminLogin:
         except:
             pass
 
-        self.Button = tk.Button(Canvas1, text="Login", borderwidth="0", width=10, background="#ffff00",
-                                foreground="#00254a",
+        self.Button = tk.Button(Canvas1, text="Login", borderwidth="0", width=10, background="#00254a",
+                                foreground="#ffffff",
                                 font="-family {Segoe UI} -size 10 -weight bold",
                                 command=lambda: self.login(self.Entry1.get(), self.Entry1_1.get()))
         self.Button.place(relx=0.765, rely=0.755)
 
-        self.Button_back = tk.Button(Canvas1, text="Back", borderwidth="0", width=10, background="#ffff00",
-                                     foreground="#00254a",
+        self.Button_back = tk.Button(Canvas1, text="Back", borderwidth="0", width=10, background="#00254a",
+                                     foreground="#ffffff",
                                      font="-family {Segoe UI} -size 10 -weight bold",
                                      command=self.back)
         self.Button_back.place(relx=0.545, rely=0.755)
@@ -551,7 +551,7 @@ class adminMenu:
         window.maxsize(1370, 749)
         window.resizable(0, 0)
         window.title("Admin Section")
-        window.configure(background="#ffff00")
+        window.configure(background="#00254a")
 
         self.Labelframe1 = tk.LabelFrame(window, relief='groove', font="-family {Segoe UI} -size 13 -weight bold",
                                          foreground="#001c37", text="Select your option", background="#fffffe")
@@ -1093,40 +1093,40 @@ class customerMenu:
         self.Labelframe1.place(relx=0.081, rely=0.081, relheight=0.415, relwidth=0.848)
 
         self.Button1 = tk.Button(self.Labelframe1, command=self.selectWithdraw, activebackground="#ececec",
-                                 activeforeground="#000000", background="#39a9fc", borderwidth="0",
+                                 activeforeground="#000000", background="#001c37", borderwidth="0",
                                  disabledforeground="#a3a3a3", font="-family {Segoe UI} -size 11", foreground="#fffffe",
                                  highlightbackground="#d9d9d9", highlightcolor="black", pady="0", text='''Withdraw''')
         self.Button1.place(relx=0.667, rely=0.195, height=34, width=181, bordermode='ignore')
 
         self.Button2 = tk.Button(self.Labelframe1, command=self.selectDeposit, activebackground="#ececec",
-                                 activeforeground="#000000", background="#39a9fc", borderwidth="0",
+                                 activeforeground="#000000", background="#001c37", borderwidth="0",
                                  disabledforeground="#a3a3a3", font="-family {Segoe UI} -size 11", foreground="#fffffe",
                                  highlightbackground="#d9d9d9", highlightcolor="black", pady="0", text='''Deposit''')
         self.Button2.place(relx=0.04, rely=0.195, height=34, width=181, bordermode='ignore')
 
         self.Button3 = tk.Button(self.Labelframe1, command=self.exit, activebackground="#ececec",
                                  activeforeground="#000000",
-                                 background="#39a9fc",
+                                 background="#001c37",
                                  borderwidth="0", disabledforeground="#a3a3a3", font="-family {Segoe UI} -size 11",
                                  foreground="#fffffe", highlightbackground="#d9d9d9", highlightcolor="black", pady="0",
                                  text='''Exit''')
         self.Button3.place(relx=0.667, rely=0.683, height=34, width=181, bordermode='ignore')
 
         self.Button4 = tk.Button(self.Labelframe1, command=self.selectChangePIN, activebackground="#ececec",
-                                 activeforeground="#000000", background="#39a9fc", borderwidth="0",
+                                 activeforeground="#000000", background="#001c37", borderwidth="0",
                                  disabledforeground="#a3a3a3", font="-family {Segoe UI} -size 11", foreground="#fffffe",
                                  highlightbackground="#d9d9d9", highlightcolor="black", pady="0", text='''Change PIN''')
         self.Button4.place(relx=0.04, rely=0.439, height=34, width=181, bordermode='ignore')
 
         self.Button5 = tk.Button(self.Labelframe1, command=self.selectCloseAccount, activebackground="#ececec",
-                                 activeforeground="#000000", background="#39a9fc", borderwidth="0",
+                                 activeforeground="#000000", background="#001c37", borderwidth="0",
                                  disabledforeground="#a3a3a3", font="-family {Segoe UI} -size 11", foreground="#fffffe",
                                  highlightbackground="#d9d9d9", highlightcolor="black", pady="0",
                                  text='''Close account''')
         self.Button5.place(relx=0.667, rely=0.439, height=34, width=181, bordermode='ignore')
 
         self.Button6 = tk.Button(self.Labelframe1, activebackground="#ececec", activeforeground="#000000",
-                                 background="#39a9fc", borderwidth="0", disabledforeground="#a3a3a3",
+                                 background="#001c37", borderwidth="0", disabledforeground="#a3a3a3",
                                  font="-family {Segoe UI} -size 11", foreground="#fffffe",
                                  highlightbackground="#d9d9d9", highlightcolor="black", pady="0",
                                  text='''Check your balance''', command=self.checkBalance)
