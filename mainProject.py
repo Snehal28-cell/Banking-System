@@ -1211,11 +1211,11 @@ class depositMoney:
 
     def submit(self, amount):
         if amount.isnumeric():
-            if 25000 >= float(amount) > 0:
+            if 100000 >= float(amount) > 0:
                 output = transaction(customer_accNO, float(amount), 1)
             else:
                 Error(Toplevel(self.master))
-                if float(amount) > 25000:
+                if float(amount) > 100000    :
                     Error.setMessage(self, message_shown="Limit exceeded!")
                 else:
                     Error.setMessage(self, message_shown="Positive value expected!")
@@ -1278,11 +1278,11 @@ class withdrawMoney:
 
     def submit(self, amount):
         if amount.isnumeric():
-            if 25000 >= float(amount) > 0:
+            if 100000 >= float(amount) > 0:
                 output = transaction(customer_accNO, float(amount), 2)
             else:
                 Error(Toplevel(self.master))
-                if float(amount) > 25000:
+                if float(amount) > 100000:
                     Error.setMessage(self, message_shown="Limit exceeded!")
                 else:
                     Error.setMessage(self, message_shown="Positive value expected!")
