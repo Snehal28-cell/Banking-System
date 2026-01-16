@@ -5,7 +5,7 @@ from tkinter import *
 import mysql.connector
 from mysql.connector import Error
 
-# Global variable for customer account number
+
 customer_accNO = None
 admin_idNO = None
 
