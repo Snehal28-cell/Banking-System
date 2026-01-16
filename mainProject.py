@@ -941,7 +941,7 @@ class createCustomerAccount:
                 return
         else:
             Error(Toplevel(self.master))
-            Error.setMessage(self, message_shown="Acc-number is invalid!")
+            Error.setMessage(self, message_shown="Account Number Is Already Used!")
             return
         
         self.master.withdraw()
